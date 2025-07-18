@@ -11,7 +11,7 @@ import Animated, { FadeIn } from 'react-native-reanimated'
 const welcome = () => {
   
   return (
-    <ScreenWrapper >
+    <ScreenWrapper showPattern={true} bgOpacity={0.5}>
       <View style={styles.container}>
           <View style={{alignSelf: 'center'}}>
               
@@ -35,7 +35,7 @@ const welcome = () => {
               and Family
             </Typo>
           </View>
-          <Button onPress={()=>router.push('./login')}>
+          <Button onPress={()=>router.push('./register')}>
             <Typo color={colors.white} fontWeight={'bold'} size={23}>Get Started</Typo>
           </Button>
       </View>
