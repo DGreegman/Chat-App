@@ -5,11 +5,7 @@ import { StatusBar, StyleSheet, Text, View } from "react-native";
 import Animated, {FadeInDown} from 'react-native-reanimated'
 
 export default function SplashScreen() {
-  useEffect(() => {
-    setTimeout(() => {
-      router.replace('/(auth)/welcome')
-    },1500)
-  }, [])
+
   return (
     <View style={styles.container}>
       
